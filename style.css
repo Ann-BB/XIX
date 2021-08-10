@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.nav-ul{
+    display: flex;
+}
+.nav-li{
+    margin: 10px;
+}
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 25px;
+    color: darkorchid;
+    display: none;
+}
+
+@media (max-width:780px) {
+    .navbar-links{
+        display: none;
+    }
+    .toggle-button{
+        display: block;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-ul{
+        flex-direction: column;
+    }
+    .nav-li{
+        text-align: right;
+    }
+    .navbar-links.active{
+        display: block;
+    }
+}
